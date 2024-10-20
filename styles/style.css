@@ -94,11 +94,10 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 112px;
+    height: 90px;
 }
 
 .logo {
-    margin-left: 10px;
     color: var(--brandColor);
     font-family: var(--NewsreaderM);
     font-size: 32px;
@@ -162,6 +161,7 @@ header {
 
 main {
     overflow: hidden;
+    margin-bottom: 100px;
 }
 
 .brandTitle {

@@ -84,7 +84,10 @@ body {
 
 header {
     width: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.836);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
 }
 
 .header__wrapper {
@@ -109,6 +112,22 @@ header {
     margin-left: 497px;
 }
 
+.header__menu a {
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
+    letter-spacing: -0.4px;
+    color: black;
+}
+
+.header__menu li:last-child a {
+    color: white;
+}
+
+.header__menu li:last-child a::after {
+    width: 0;
+}
+
 .header__menu--basket {
     font-family: var(--InterM);
     padding: 13.5px 23px;
@@ -119,13 +138,6 @@ header {
 
 .header__menu--basket:hover{
     background-color: var(--brandColor-hover);
-}
-
-.header__menu a {
-    text-decoration: none;
-    font-size: 16px;
-    position: relative;
-    letter-spacing: -0.4px;
 }
 
 .header__menu a::after {
@@ -150,7 +162,6 @@ header {
 
 main {
     overflow: hidden;
-    margin-bottom: 80px;
 }
 
 .brandTitle {

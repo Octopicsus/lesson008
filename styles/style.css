@@ -14,6 +14,11 @@
 }
 
 @font-face {
+    font-family: 'InterB';
+    src: url("/fonts/Inter_24pt-Bold.ttf");
+}
+
+@font-face {
     font-family: 'NewsreaderL';
     src: url("/fonts/Newsreader_24pt-Light.ttf");
 }
@@ -50,6 +55,7 @@
     --InterL: 'InterL';
     --InterR: 'InterR';
     --InterM: 'InterM';
+    --InterB: 'InterB';
     --NewsreaderL: 'NewsreaderL';
     --NewsreaderI: 'NewsreaderI';
     --NewsreaderR: 'NewsreaderR';
@@ -57,8 +63,6 @@
     --NewsreaderSB: 'NewsreaderSB';
     --NewsreaderB: 'NewsreaderB';
 }
-
-
 
 
 
@@ -75,6 +79,7 @@ body {
 
 
 /*Header----------------------------------------------------*/
+
 
 header {
     width: 100%;
@@ -93,6 +98,7 @@ header {
     color: var(--brandColor);
     font-family: var(--NewsreaderM);
     font-size: 32px;
+    letter-spacing: -1.4px;
 }
 
 .header__menu {
@@ -114,6 +120,7 @@ header {
     text-decoration: none;
     font-size: 16px;
     position: relative;
+    letter-spacing: -0.4px;
 }
 
 .header__menu a::after {
@@ -135,8 +142,10 @@ header {
 
 /*Main------------------------------------------------------*/
 
-main{
+
+main {
     overflow: hidden;
+    margin-bottom: 80px;
 }
 
 .brandTitle {
@@ -152,10 +161,11 @@ main{
 
 .brandTitle h1 {
     font-family: var(--NewsreaderR);
-    font-size: 58px;
+    font-size: 64px;
     width: 1020px;
     line-height: 64px;
     margin-bottom: 48px;
+    letter-spacing: -1.4px;
 }
 
 .brandTitle h1 span {
@@ -166,49 +176,90 @@ main{
     background-color: var(--brandColor);
     color: white;
     font-family: var(--InterM);
+    font-size: 16px;
     padding: 19px 32px;
     border-radius: 8px;
     border: 1px solid black;
     cursor: pointer;
 }
 
-.brandGallery{
-   width: 100%;
-   margin-top: 156px;
-   margin-left: 96px;
-   display: flex;
-   align-items: center;
-
+.brandGallery {
+    width: 100%;
+    margin-top: 156px;
+    margin-left: 96px;
+    display: flex;
+    align-items: center;
 }
 
-.brandGallery__pic01{
+.brandGallery__pic01 {
     background-image: url('/img/salat_mainPage.png');
     width: 504px;
     height: 693px;
 }
 
-.brandGallery__wrapper{
+.brandGallery__wrapper {
     margin-left: 60px;
 }
 
-.brandGallery__pic02{
+.brandGallery__pic02 {
     background-image: url('/img/food_mainPage.png ');
     width: 780px;
     height: 480px;
 }
 
-.brandGallery__description{
+.brandGallery__description {
     margin-top: 16px;
     width: 780px;
     font-family: var(--InterL);
-    line-height: 22.4px;   
+    line-height: 22.4px;
 }
 
-.brandGallery__description strong{
-font-family: var(--InterM);
+.brandGallery__description strong {
+    font-family: var(--InterM);
 }
 
-.brandArticle{
+.brandArticle {
     margin-top: 161px;
     margin-left: 96px;
+    display: flex;
+}
+
+
+.brandArticle__Title {
+    font-family: var(--InterB);
+    font-size: 15px;
+    min-width: 181px;
+    margin-top: 7px;
+}
+
+.brandArticle__description {
+    font-family: var(--InterR);
+    font-size: 20px;
+    width: 780px;
+    margin-left: 32px;
+    line-height: 30px;
+}
+
+
+
+/*Footer------------------------------------------------------*/
+
+
+footer{
+
+}
+
+.footerSeparator{
+    width: 100%;
+    height: 1px;
+    background-color: rgb(199, 199, 199);
+}
+
+footer h3{
+    font-family: var(--InterM);
+    font-size: 18px;
+    margin: 60px 0;
+    margin-left: 96px;
+    text-transform: uppercase;
+    text-align: center;
 }

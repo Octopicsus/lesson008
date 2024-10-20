@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'InterL';
+    src: url("/fonts/Inter_24pt-Light.ttf");
+}
+
+@font-face {
+    font-family: 'InterR';
+    src: url("/fonts/Inter_24pt-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'InterM';
+    src: url("/fonts/Inter_24pt-Medium.ttf");
+}
+
+@font-face {
+    font-family: 'NewsreaderL';
+    src: url("/fonts/Newsreader_24pt-Light.ttf");
+}
+
+@font-face {
+    font-family: 'NewsreaderI';
+    src: url("/fonts/Newsreader_24pt-Italic.ttf");
+}
+
+@font-face {
+    font-family: 'NewsreaderR';
+    src: url("/fonts/Newsreader_24pt-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'NewsreaderM';
+    src: url("/fonts/Newsreader_24pt-Medium.ttf");
+}
+
+@font-face {
+    font-family: 'NewsreaderSB';
+    src: url("/fonts/Newsreader_24pt-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: 'NewsreaderB';
+    src: url("/fonts/Newsreader_24pt-Bold.ttf");
+}
+
+:root{
+    --mainSection-Width: 1440px;
+    --brandColor: rgb(66, 107, 31);
+    --bgColor: rgb(230, 230, 230, 1);
+    --InterL: 'InterL';
+    --InterR: 'InterR';
+    --InterM: 'InterM';
+    --NewsreaderL: 'NewsreaderL';
+    --NewsreaderI: 'NewsreaderI';
+    --NewsreaderR: 'NewsreaderR';
+    --NewsreaderM: 'NewsreaderM';
+    --NewsreaderSB: 'NewsreaderSB';
+    --NewsreaderB: 'NewsreaderB';
+    
+}
+
+
+
+
+
+
+body{
+    font-family: var(--InterR);
+}
+
+.mainSection {
+    margin: 0 auto;
+    width: 1440px;
+}
+
+ /*Header----------------------------------------------------*/
+
+header {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 112px;
+}
+
+.logo{
+    margin-left: 96px;
+    color: var(--brandColor);
+    font-family: var(--NewsreaderM);
+    font-size: 32px;
+}
+
+.header__menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 48px;
+    margin-left: 497px;
+}
+
+.header__menu--basket{
+    font-family: var(--InterM);
+    padding: 13.5px 23px;
+    background-color: var(--brandColor);
+    color: white;
+    border-radius: 8px;
+}
+
+.header__menu a{
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
+}
+
+.header__menu a::after{
+    content: '';
+    width: 0;
+    height: 1px;
+    background-color: rgb(143, 143, 143);
+    position: absolute;
+    right: 0;
+    bottom: -9px;
+    transition: width 0.3s ease-out;
+}
+
+.header__menu a:hover::after{
+    width: 100%;
+}
+
+
+  /*Main------------------------------------------------------*/

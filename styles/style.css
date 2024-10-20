@@ -43,7 +43,7 @@
     src: url("/fonts/Newsreader_24pt-Bold.ttf");
 }
 
-:root{
+:root {
     --mainSection-Width: 1440px;
     --brandColor: rgb(66, 107, 31);
     --bgColor: rgb(230, 230, 230, 1);
@@ -56,7 +56,6 @@
     --NewsreaderM: 'NewsreaderM';
     --NewsreaderSB: 'NewsreaderSB';
     --NewsreaderB: 'NewsreaderB';
-    
 }
 
 
@@ -64,20 +63,20 @@
 
 
 
-body{
+body {
     font-family: var(--InterR);
 }
 
 .mainSection {
     margin: 0 auto;
-    width: 1440px;
+    width: var(--mainSection-Width);
 }
 
- /*Header----------------------------------------------------*/
+/*Header----------------------------------------------------*/
 
 header {
     width: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(231, 231, 231);
 }
 
 .header__wrapper {
@@ -87,8 +86,8 @@ header {
     height: 112px;
 }
 
-.logo{
-    margin-left: 96px;
+.logo {
+    margin-left: 10px;
     color: var(--brandColor);
     font-family: var(--NewsreaderM);
     font-size: 32px;
@@ -101,7 +100,7 @@ header {
     margin-left: 497px;
 }
 
-.header__menu--basket{
+.header__menu--basket {
     font-family: var(--InterM);
     padding: 13.5px 23px;
     background-color: var(--brandColor);
@@ -109,13 +108,13 @@ header {
     border-radius: 8px;
 }
 
-.header__menu a{
+.header__menu a {
     text-decoration: none;
     font-size: 16px;
     position: relative;
 }
 
-.header__menu a::after{
+.header__menu a::after {
     content: '';
     width: 0;
     height: 1px;
@@ -126,9 +125,39 @@ header {
     transition: width 0.3s ease-out;
 }
 
-.header__menu a:hover::after{
+.header__menu a:hover::after {
     width: 100%;
 }
 
+/*Main------------------------------------------------------*/
 
-  /*Main------------------------------------------------------*/
+.brandTitle {
+    margin-top: 167px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brandTitle section {
+    text-align: center;
+}
+
+.brandTitle h1 {
+    font-family: var(--NewsreaderR);
+    font-size: 58px;
+    width: 1020px;
+    line-height: 64px;
+    margin-bottom: 48px;
+}
+
+.brandTitle h1 span {
+    font-family: var(--NewsreaderI);
+}
+
+.brandTitle button {
+    background-color: var(--brandColor);
+    color: white;
+    font-family: var(--InterM);
+    padding: 19px 32px;
+
+}

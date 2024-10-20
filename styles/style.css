@@ -52,6 +52,7 @@
     --mainSection-Width: 1440px;
     --brandColor: rgb(66, 107, 31);
     --bgColor: rgb(230, 230, 230, 1);
+    --brandColor-hover: rgb(89, 146, 39);
     --InterL: 'InterL';
     --InterR: 'InterR';
     --InterM: 'InterM';
@@ -114,6 +115,10 @@ header {
     background-color: var(--brandColor);
     color: white;
     border-radius: 8px;
+}
+
+.header__menu--basket:hover{
+    background-color: var(--brandColor-hover);
 }
 
 .header__menu a {
@@ -183,6 +188,10 @@ main {
     cursor: pointer;
 }
 
+.brandTitle button:hover{
+    background-color: var(--brandColor-hover);
+}
+
 .brandGallery {
     width: 100%;
     margin-top: 156px;
@@ -223,7 +232,6 @@ main {
     margin-left: 96px;
     display: flex;
 }
-
 
 .brandArticle__Title {
     font-family: var(--InterB);

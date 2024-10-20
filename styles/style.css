@@ -65,6 +65,11 @@
     --NewsreaderB: 'NewsreaderB';
 }
 
+::-webkit-scrollbar {
+    width: 0;
+  }
+
+
 
 
 
@@ -116,14 +121,16 @@ header {
     font-size: 16px;
     position: relative;
     letter-spacing: -0.4px;
-    color: black;
+    color: rgb(99, 99, 99);
 }
 
 .header__menu li:last-child a {
     color: white;
 }
 
-.header__menu li:last-child a::after {
+.header__menu li:last-child a::after,
+.header__menu li:nth-child(3) a::after,
+.header__menu li:nth-child(4) a::after {
     width: 0;
 }
 
@@ -152,6 +159,15 @@ header {
 
 .header__menu a:hover::after {
     width: 100%;
+}
+
+.header__menu--selected{
+    font-family: var(--InterB);
+    color: black !important;
+}
+
+#disable{
+    color: rgb(214, 214, 214);
 }
 
 

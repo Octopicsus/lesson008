@@ -72,11 +72,13 @@ body {
     width: var(--mainSection-Width);
 }
 
+
+
 /*Header----------------------------------------------------*/
 
 header {
     width: 100%;
-    background-color: rgb(231, 231, 231);
+    background-color: rgb(255, 255, 255);
 }
 
 .header__wrapper {
@@ -129,7 +131,13 @@ header {
     width: 100%;
 }
 
+
+
 /*Main------------------------------------------------------*/
+
+main{
+    overflow: hidden;
+}
 
 .brandTitle {
     margin-top: 167px;
@@ -159,5 +167,48 @@ header {
     color: white;
     font-family: var(--InterM);
     padding: 19px 32px;
+    border-radius: 8px;
+    border: 1px solid black;
+    cursor: pointer;
+}
 
+.brandGallery{
+   width: 100%;
+   margin-top: 156px;
+   margin-left: 96px;
+   display: flex;
+   align-items: center;
+
+}
+
+.brandGallery__pic01{
+    background-image: url('/img/salat_mainPage.png');
+    width: 504px;
+    height: 693px;
+}
+
+.brandGallery__wrapper{
+    margin-left: 60px;
+}
+
+.brandGallery__pic02{
+    background-image: url('/img/food_mainPage.png ');
+    width: 780px;
+    height: 480px;
+}
+
+.brandGallery__description{
+    margin-top: 16px;
+    width: 780px;
+    font-family: var(--InterL);
+    line-height: 22.4px;   
+}
+
+.brandGallery__description strong{
+font-family: var(--InterM);
+}
+
+.brandArticle{
+    margin-top: 161px;
+    margin-left: 96px;
 }

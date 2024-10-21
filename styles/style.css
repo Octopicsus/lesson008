@@ -206,7 +206,7 @@ main {
     font-family: var(--NewsreaderR);
     font-size: 64px;
     width: 1020px;
-    line-height: 64px;
+    line-height: 74px;
     margin-bottom: 62px;
     letter-spacing: -1.4px;
 }
@@ -222,12 +222,11 @@ main {
     font-size: 16px;
     padding: 19px 32px;
     border-radius: 8px;
-    border: 1px solid black;
     cursor: pointer;
     text-decoration: none;
 }
 
-.brandTitle button:hover{
+.brandTitle a:hover{
     background-color: var(--brandColor-hover);
 }
 
@@ -378,7 +377,9 @@ main {
 }
 
 .productCard__productImg{
-    min-height: 296px;
+    width: 395px;
+    height: 296px;
+    overflow: hidden;
 }
 
 .productCard__wrapper{
@@ -405,6 +406,35 @@ main {
     margin-top: 16px;
 
 }
+
+
+
+/*Basket------------------------------------------------------*/
+
+
+
+.basket{
+    margin-top: 40px;
+    margin-left: 136px;
+}
+
+.basketList__item__img{
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+}
+
+.basketList{
+    display: flex;
+    flex-direction: column;
+}
+
+.basketList__item__wrapper{
+    display: flex;
+}
+
+
+
 
 
 

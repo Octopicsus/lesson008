@@ -1,51 +1,51 @@
 @font-face {
     font-family: 'InterL';
-    src: url("/fonts/Inter_24pt-Light.ttf");
+    src: url("/world-peas/fonts/Inter_24pt-Light.ttf");
 }
 
 @font-face {
     font-family: 'InterR';
-    src: url("/fonts/Inter_24pt-Regular.ttf");
+    src: url("/world-peas/fonts/Inter_24pt-Regular.ttf");
 }
 
 @font-face {
     font-family: 'InterM';
-    src: url("/fonts/Inter_24pt-Medium.ttf");
+    src: url("/world-peas/fonts/Inter_24pt-Medium.ttf");
 }
 
 @font-face {
     font-family: 'InterB';
-    src: url("/fonts/Inter_24pt-Bold.ttf");
+    src: url("/world-peas/fonts/Inter_24pt-Bold.ttf");
 }
 
 @font-face {
     font-family: 'NewsreaderL';
-    src: url("/fonts/Newsreader_24pt-Light.ttf");
+    src: url("/world-peas/fonts/Newsreader_24pt-Light.ttf");
 }
 
 @font-face {
     font-family: 'NewsreaderI';
-    src: url("/fonts/Newsreader_24pt-Italic.ttf");
+    src: url("/world-peas/fonts/Newsreader_24pt-Italic.ttf");
 }
 
 @font-face {
     font-family: 'NewsreaderR';
-    src: url("/fonts/Newsreader_24pt-Regular.ttf");
+    src: url("/world-peas/fonts/Newsreader_24pt-Regular.ttf");
 }
 
 @font-face {
     font-family: 'NewsreaderM';
-    src: url("/fonts/Newsreader_24pt-Medium.ttf");
+    src: url("/world-peas/fonts/Newsreader_24pt-Medium.ttf");
 }
 
 @font-face {
     font-family: 'NewsreaderSB';
-    src: url("/fonts/Newsreader_24pt-SemiBold.ttf");
+    src: url("/world-peas/fonts/Newsreader_24pt-SemiBold.ttf");
 }
 
 @font-face {
     font-family: 'NewsreaderB';
-    src: url("/fonts/Newsreader_24pt-Bold.ttf");
+    src: url("/world-peas/fonts/Newsreader_24pt-Bold.ttf");
 }
 
 :root {
@@ -238,7 +238,7 @@ main {
 }
 
 .brandGallery__pic01 {
-    background-image: url('/img/salat_mainPage.png');
+    background-image: url('/world-peas/img/salat_mainPage.png');
     width: 504px;
     height: 693px;
 }
@@ -248,7 +248,7 @@ main {
 }
 
 .brandGallery__pic02 {
-    background-image: url('/img/food_mainPage.png ');
+    background-image: url('/world-peas/img/food_mainPage.png ');
     width: 780px;
     height: 480px;
 }
@@ -494,7 +494,7 @@ main {
 }
 
 .basketList__item__editIcon {
-    background-image: url('/img/edit.png');
+    background-image: url('/world-peas/img/edit.png');
     width: 32px;
     height: 32px;
     margin-left: auto;
@@ -558,7 +558,7 @@ main {
 }
 
 .orderBTN__icon {
-    background-image: url('/img/arrow.png');
+    background-image: url('/world-peas/img/arrow.png');
     width: 32px;
     height: 32px;
     margin-left: auto;

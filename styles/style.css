@@ -323,7 +323,7 @@ main {
 }
 
 .pageTitle__filterList button {
-    font-family: var(--InterB);
+    font-family: var(--InterM);
     font-size: 16px;
     background-color: white;
     padding: 9.5px 16px;

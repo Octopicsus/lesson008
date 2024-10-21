@@ -182,7 +182,7 @@ header {
 
 
 
-/*Main------------------------------------------------------*/
+/*Home--------------------------------------------------------*/
 
 
 main {
@@ -233,7 +233,7 @@ main {
 .brandGallery {
     width: 100%;
     margin-top: 156px;
-    margin-left: 96px;
+    margin-left: 126px;
     display: flex;
     align-items: center;
 }
@@ -256,7 +256,7 @@ main {
 
 .brandGallery__description {
     margin-top: 16px;
-    width: 780px;
+    width: 720px;
     font-family: var(--InterL);
     line-height: 22.4px;
 }
@@ -267,7 +267,7 @@ main {
 
 .brandArticle {
     margin-top: 161px;
-    margin-left: 96px;
+    margin-left: 136px;
     display: flex;
 }
 
@@ -285,6 +285,76 @@ main {
     margin-left: 32px;
     line-height: 30px;
 }
+
+
+
+
+/*PageTitle---------------------------------------------------*/
+
+
+
+.pageTitle{
+    margin-top: 76px;
+    margin-left: 136px;
+}
+
+.pageTitle__wrapper{
+    display: flex;
+    align-items: baseline;
+}
+
+.pageTitle__title{
+    font-family: var(--NewsreaderM);
+    font-size: 64px;
+    margin-right: 24px;
+}
+
+.pageTitle__statusWrapper{
+    display: flex;
+    font-family: var(--InterL);
+}
+
+.pageTitle__productCondition{
+    font-family: var(--InterM);
+}
+
+.pageTitle__filterList{
+    margin-left: auto;
+    margin-right: 136px;
+}
+
+.pageTitle__filterList button{
+    font-family: var(--InterB);
+    font-size: 16px;
+    background-color: white;
+    padding: 9.5px 16px;
+    border-radius: 20px;
+    border: solid 1px rgb(194, 194, 194);
+    cursor: pointer;
+}
+
+.pageTitle__filterMenu{
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+
+}
+
+.pageTitle__filterButton--selected{
+    background-color: var(--brandColor) !important;
+    border: none !important;
+    color: white !important;
+}
+
+.titleSeparator{
+    margin-top: 43px;
+    width: 90%;
+    height: 2px;
+    background-color: rgb(230, 230, 230);
+}
+
+
+
 
 
 

@@ -171,7 +171,9 @@ header {
 }
 
 .header__menu--disable{
-    color: rgb(235, 235, 235) !important
+    color: rgb(235, 235, 235) !important;
+    cursor: default;
+    
 }
 
 .header__menu--disable::after{
@@ -204,7 +206,7 @@ main {
     font-size: 64px;
     width: 1020px;
     line-height: 64px;
-    margin-bottom: 48px;
+    margin-bottom: 62px;
     letter-spacing: -1.4px;
 }
 
@@ -212,7 +214,7 @@ main {
     font-family: var(--NewsreaderI);
 }
 
-.brandTitle button {
+.brandTitle a {
     background-color: var(--brandColor);
     color: white;
     font-family: var(--InterM);
@@ -221,6 +223,7 @@ main {
     border-radius: 8px;
     border: 1px solid black;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .brandTitle button:hover{
@@ -270,9 +273,9 @@ main {
 
 .brandArticle__Title {
     font-family: var(--InterB);
-    font-size: 15px;
+    font-size: 14px;
     min-width: 181px;
-    margin-top: 7px;
+    margin-top: 8px;
 }
 
 .brandArticle__description {

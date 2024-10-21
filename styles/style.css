@@ -121,18 +121,22 @@ header {
     font-size: 16px;
     position: relative;
     letter-spacing: -0.4px;
-    color: rgb(99, 99, 99);
+    color: rgb(119, 119, 119);
 }
 
 .header__menu li:last-child a {
     color: white;
 }
 
-.header__menu li:last-child a::after,
-.header__menu li:nth-child(3) a::after,
-.header__menu li:nth-child(4) a::after {
+.header__menu li:last-child a::after
+ {
     width: 0;
 }
+
+/* .header__menu li:nth-child(3) a::after, */
+/* .header__menu li:nth-child(4) a::after{ */
+    /* width: 0; */
+/* } */
 
 .header__menu--basket {
     font-family: var(--InterM);
@@ -162,12 +166,16 @@ header {
 }
 
 .header__menu--selected{
-    font-family: var(--InterB);
+    font-family: var(--InterM);
     color: black !important;
 }
 
-#disable{
-    color: rgb(214, 214, 214);
+.header__menu--disable{
+    color: rgb(235, 235, 235) !important
+}
+
+.header__menu--disable::after{
+    width: 0 !important;
 }
 
 
